@@ -226,3 +226,4 @@ pedro.onclick = function () {
   }
 
 };
+}
