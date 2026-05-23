@@ -4,6 +4,20 @@ const messageBox = document.getElementById("messageBox");
 const countdown = document.getElementById("countdown");
 const officialBox = document.getElementById("officialBox");
 
+let visits =
+  localStorage.getItem("visits");
+
+visits = visits ? parseInt(visits) + 1 : 1;
+
+localStorage.setItem("visits", visits);
+if (visits > 1) {
+
+  messageBox.innerHTML =
+    `The lanterns noticed you came back ✨<br>
+     Visit #${visits}`;
+
+}
+
 const sweetMessages = [
   "Maybe your heart just needs a little more time 🌙",
   "Sleep on it. The lanterns will still be waiting tomorrow ✨",
@@ -139,4 +153,54 @@ yesBtn.addEventListener("click", async () => {
     })
   });
 
+});
+
+const pedroMessages = [
+  "(Pedro) Pascal and Max have reviewed the situation. They ship it 💛",
+  "Maximus would like to aggressively support this relationship.",
+  "(Pedro) Pascal believes this is peak romance.",
+  "(Pedro) Pascal says you’re really pretty today.",
+  "Maximus has detected strong girlfriend potential.",
+  "(Pedro) Pascal thinks your smile deserves its own lantern festival.",
+  "The horse has spoken. The answer should probably be yes.",
+  "(Pedro) Pascal and Max are emotionally invested now.",
+];
+
+const pedro = document.getElementById("pedro");
+
+pedro.addEventListener("click", () => {
+
+  const randomPedroMessage =
+    pedroMessages[
+      Math.floor(Math.random() * pedroMessages.length)
+    ];
+
+  messageBox.innerHTML =
+    randomPedroMessage;
+});
+
+const whyMessages = [
+  "Because life feels softer with you in it.",
+  "Because you make ordinary moments feel special.",
+  "Because I look for you first.",
+  "Because your existence genuinely makes me happy.",
+  "Because talking to you feels easy.",
+  "Because you feel like home in a way I can't explain.",
+  "Because I want more moments with you.",
+  "Because even my favorite songs sound better lately.",
+  "Because you're the person I want to tell things to first.",
+  "Because you matter to me. A lot."
+];
+const whyBtn =
+  document.getElementById("whyBtn");
+
+whyBtn.addEventListener("click", () => {
+
+  const randomWhyMessage =
+    whyMessages[
+      Math.floor(Math.random() * whyMessages.length)
+    ];
+
+  messageBox.innerHTML =
+    randomWhyMessage;
 });
