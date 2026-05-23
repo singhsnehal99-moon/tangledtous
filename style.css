@@ -124,17 +124,21 @@ button {
     opacity: 0;
   }
 }
+
+
 #pedro {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10px;
+  right: 10px;
   width: 240px;
   cursor: pointer;
-  z-index: 99999;
-  pointer-events: auto;
+  z-index: 999999;
+  transition: transform 0.3s ease;
 }
+
 #pedro:hover {
-  opacity: 0.5;
+  transform: scale(1.08);
+  opacity: 0.9;
 }
 
 #whyBtn {
