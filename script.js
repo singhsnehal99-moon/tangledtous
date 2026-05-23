@@ -5,13 +5,49 @@ const countdown = document.getElementById("countdown");
 const officialBox = document.getElementById("officialBox");
 
 const sweetMessages = [
-  "Maybe your heart needs one more day 🌙",
-  "Sleep on it. The lanterns will still be here tomorrow ✨",
-  "Rapunzel waited 18 years. I can wait one more day 💛",
-  "This feels like a slow burn romance arc.",
-  "Even Pascal thinks you should reconsider."
+  "Maybe your heart just needs a little more time 🌙",
+  "Sleep on it. The lanterns will still be waiting tomorrow ✨",
+  "Rapunzel waited 18 years. I can survive one more day 💛",
+  "Some love stories are worth thinking carefully about.",
+  "Even Pascal thinks we’d be cute together.",
+  "No pressure. Just a tiny devastating amount of yearning.",
+  "Maybe tomorrow your heart will feel a little braver ✨",
+  "You don’t have to answer quickly for it to mean something.",
+  "The stars and I will patiently wait for your answer 🌌",
+  "I still think choosing us would be kinda wonderful.",
+  "Honestly? I just really like you. A lot.",
+  "The lanterns believe in us. Just saying.",
+  "Take your time 💛 Some things are worth being sure about.",
+  "Maybe this is just the beginning of our favorite story.",
+  "Imagine how cute our anniversary stories would sound.",
+  "Still rooting for us quietly over here ✨",
+  "Maybe tomorrow will feel like the right moment.",
+  "I think you’re someone really special.",
+  "Future us would probably laugh at this moment together.",
+  "You make my world softer in the nicest way.",
+  "No dramatic speeches today. Just… I hope you say yes someday 💛",
+  "I can wait a little longer for something meaningful.",
+  "This website remains emotionally invested in you.",
+  "Maybe the real treasure was the lesbians we became along the way.",
+  "Somewhere out there, Flynn Rider is judging my coding skills.",
+  "Tiny reminder: you are very, very loved.",
+  "If feelings were lanterns, mine would probably cover the entire sky ✨",
+  "I hope today was gentle with you 💛",
+  "Okay. I’ll ask again tomorrow like a respectful little romantic."
 ];
 
+const buttonTexts = [
+  "Still Thinking? 💛",
+  "Maybe Tomorrow? 🌙",
+  "Take Your Time ✨",
+  "The Lanterns Believe In Us 🏮",
+  "Sleep On It? 💫"
+];
+
+noBtn.innerText =
+  buttonTexts[
+    Math.floor(Math.random() * buttonTexts.length)
+  ];
 function createLanterns() {
 
   for (let i = 0; i < 25; i++) {
