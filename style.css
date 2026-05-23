@@ -126,18 +126,17 @@ button {
 }
 #pedro {
   position: fixed;
-  bottom: 50px;
-  right: 50px;
-  width: 280px;
+  bottom: 20px;
+  right: 20px;
+  width: 240px;
   cursor: pointer;
-  transition: 0.3s ease;
-  z-index: 999;
-  filter: drop-shadow(0 0 10px rgba(255,215,107,0.4));
+  z-index: 99999;
+  pointer-events: auto;
+}
+#pedro:hover {
+  opacity: 0.5;
 }
 
-#pedro:hover {
-  transform: scale(1.08) rotate(3deg);
-}
 #whyBtn {
   background: rgba(255,255,255,0.1);
   color: white;
