@@ -195,6 +195,23 @@ if (whyBtn) {
       randomWhyMessage;
   });
 
+  //const pedro =
+  //document.getElementById("pedro");
+
+//if (pedro) {
+
+  //pedro.onclick = function () {
+
+    //const randomPedroMessage =
+      //pedroMessages[
+        //Math.floor(Math.random() * pedroMessages.length)
+      //];
+
+    //document.getElementById("messageBox").innerHTML =
+      //randomPedroMessage;
+  //};
+//}
+
   const pedro =
   document.getElementById("pedro");
 
@@ -202,13 +219,8 @@ if (pedro) {
 
   pedro.onclick = function () {
 
-    const randomPedroMessage =
-      pedroMessages[
-        Math.floor(Math.random() * pedroMessages.length)
-      ];
+    alert("Pedro works 🦎");
 
-    document.getElementById("messageBox").innerHTML =
-      randomPedroMessage;
   };
 
 }
