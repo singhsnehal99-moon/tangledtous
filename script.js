@@ -207,9 +207,8 @@ if (pedro) {
         Math.floor(Math.random() * pedroMessages.length)
       ];
 
-    messageBox.innerHTML =
+    document.getElementById("messageBox").innerHTML =
       randomPedroMessage;
   };
 
-}
 }
