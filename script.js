@@ -182,28 +182,24 @@ yesBtn.addEventListener("click", async () => {
 
 });
 
+const pedro =
+  document.getElementById("pedro");
 
-window.addEventListener("load", () => {
+if (pedro) {
 
-  const pedro =
-    document.getElementById("pedro");
+  pedro.onclick = function () {
 
-  if (pedro) {
+    const randomPedroMessage =
+      pedroMessages[
+        Math.floor(Math.random() * pedroMessages.length)
+      ];
 
-    pedro.addEventListener("click", () => {
+    messageBox.innerHTML =
+      randomPedroMessage;
+  };
 
-      const randomPedroMessage =
-        pedroMessages[
-          Math.floor(Math.random() * pedroMessages.length)
-        ];
+}
 
-      messageBox.innerHTML =
-        randomPedroMessage;
-    });
-
-  }
-
-});
 if (whyBtn) {
 
   whyBtn.addEventListener("click", () => {
