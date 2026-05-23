@@ -140,6 +140,39 @@ button {
   transform: scale(1.08);
   opacity: 0.9;
 }
+#pedroBubble {
+  position: absolute;
+
+  bottom: 220px;
+  right: 40px;
+
+  background: rgba(20,20,20,0.85);
+
+  color: white;
+
+  padding: 1rem;
+
+  border-radius: 20px;
+
+  width: 220px;
+
+  font-size: 0.9rem;
+
+  line-height: 1.4;
+
+  opacity: 0;
+
+  transition: opacity 0.3s ease;
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  z-index: 9999999;
+
+  pointer-events: none;
+
+  box-shadow:
+    0 0 20px rgba(0,0,0,0.3);
+}
 
 #whyBtn {
   background: rgba(255,255,255,0.1);
