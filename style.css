@@ -5,7 +5,9 @@
     overflow-y: auto;
     overflow-x: hidden;
     align-items: flex-start;
-    padding-top: 3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 8rem;
+    min-height: 100vh;
   }
 
   .container {
@@ -14,7 +16,7 @@
   }
 
   h1 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     line-height: 1.1;
   }
 
@@ -24,7 +26,7 @@
   }
 
   .question-box {
-    padding: 2rem 1.5rem;
+    padding: 2rem 1.2rem;
     border-radius: 20px;
   }
 
@@ -47,14 +49,14 @@
   }
 
   #messageBox {
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
     font-size: 0.95rem;
     line-height: 1.5;
     padding: 0 0.5rem;
   }
 
   #countdown {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     line-height: 1.4;
     margin-top: 1rem;
   }
@@ -66,20 +68,31 @@
   }
 
   #pedroContainer {
-    right: -5px;
-    bottom: 0;
+    position: fixed;
+    right: -10px;
+    bottom: -10px;
+    z-index: 999999;
   }
 
   #pedro {
-    width: 150px;
+    width: 110px;
   }
 
   #pedroBubble {
-    width: 170px;
-    font-size: 0.8rem;
-    bottom: 140px;
-    right: 20px;
-    padding: 0.8rem;
+    width: 140px;
+    font-size: 0.72rem;
+    line-height: 1.4;
+    bottom: 100px;
+    right: 10px;
+    padding: 0.7rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  #pedroContainer {
+    display: none;
   }
 
 }
