@@ -109,6 +109,7 @@ yesBtn.addEventListener("click", async () => {
   noBtn.style.display = "none";
 
   document.getElementById("yesForm").submit();
+    console.log("done");
 
 });
 
