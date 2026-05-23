@@ -112,5 +112,4 @@ yesBtn.addEventListener("click", () => {
 
     alert("Tiny lantern malfunction 🥲 Check console.");
   });
-  }
-};
+}
