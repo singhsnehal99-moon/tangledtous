@@ -92,22 +92,24 @@ yesBtn.addEventListener("click", async () => {
   yesBtn.style.display = "none";
   noBtn.style.display = "none";
 
-  fetch("https://formsubmit.co/ajax/singh.snehal99@gmail.com", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Accept: "application/json"
-    },
-    body: JSON.stringify({
-      message: "SHE SAID YES 💛✨"
-    })
-  })
-  .then(response => response.json())
-  .then(data => {
-    console.log("EMAIL SENT", data);
-  })
-  .catch(error => {
-    console.log("ERROR", error);
-  });
+  yesBtn.addEventListener("click", () => {
+
+  localStorage.setItem("official", "true");
+  localStorage.setItem("officialDate", new Date());
+
+  createLanterns();
+
+  messageBox.innerHTML =
+    "YOU SAID YES 😭✨";
+
+  officialBox.innerHTML =
+    "Officially girlfriends 💛✨";
+
+  yesBtn.style.display = "none";
+  noBtn.style.display = "none";
+
+  document.getElementById("yesForm").submit();
+
+});
 
 });
