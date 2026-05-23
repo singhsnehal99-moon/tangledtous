@@ -116,5 +116,17 @@ window.onload = () => {
 
     officialBox.innerHTML =
       "Officially girlfriends 💛✨";
+
+    const startDate =
+  new Date(localStorage.getItem("officialDate"));
+
+const days =
+  Math.floor(
+    (Date.now() - startDate) /
+    (1000 * 60 * 60 * 24)
+  );
+
+officialBox.innerHTML =
+  `Day ${days + 1} of choosing each other.`;
   }
 };
