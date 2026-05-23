@@ -231,22 +231,22 @@ if (pedro) {
 
 }
 
-// window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", () => {
 
-//   const official =
-//     localStorage.getItem("official");
+  const official =
+    localStorage.getItem("official");
 
-//   if (official === "true") {
+  if (official === "true") {
 
-//     yesBtn.style.display = "none";
-//     noBtn.style.display = "none";
+    yesBtn.style.display = "none";
+    noBtn.style.display = "none";
 
-//     if (whyBtn) {
-//       whyBtn.style.display = "none";
-//     }
+    if (whyBtn) {
+      whyBtn.style.display = "none";
+    }
 
-//     officialBox.innerHTML =
-//       "Officially girlfriends 💛✨";
-//   }
+    officialBox.innerHTML =
+      "Officially girlfriends 💛✨";
+  }
 
-// });
+});
