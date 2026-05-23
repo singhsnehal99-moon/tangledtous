@@ -182,7 +182,20 @@ yesBtn.addEventListener("click", async () => {
 
 });
 
-const pedro =
+if (whyBtn) {
+
+  whyBtn.addEventListener("click", () => {
+
+    const randomWhyMessage =
+      whyMessages[
+        Math.floor(Math.random() * whyMessages.length)
+      ];
+
+    messageBox.innerHTML =
+      randomWhyMessage;
+  });
+
+  const pedro =
   document.getElementById("pedro");
 
 if (pedro) {
@@ -199,18 +212,4 @@ if (pedro) {
   };
 
 }
-
-if (whyBtn) {
-
-  whyBtn.addEventListener("click", () => {
-
-    const randomWhyMessage =
-      whyMessages[
-        Math.floor(Math.random() * whyMessages.length)
-      ];
-
-    messageBox.innerHTML =
-      randomWhyMessage;
-  });
-
 }
