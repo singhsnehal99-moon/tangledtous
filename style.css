@@ -178,3 +178,94 @@ button {
   background: rgba(255,255,255,0.1);
   color: white;
 }
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+    line-height: 1.1;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+
+  .question-box {
+    padding: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  #messageBox,
+  #countdown,
+  #officialBox {
+    line-height: 1.5;
+  }
+
+  #pedro {
+    width: 140px;
+    bottom: -5px;
+    right: -5px;
+  }
+
+  #pedroBubble {
+    width: 160px;
+    font-size: 0.75rem;
+
+    bottom: 120px;
+    right: 15px;
+
+    padding: 0.8rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  .question-box {
+    padding: 1.5rem 1rem;
+  }
+
+  button {
+    max-width: 100%;
+  }
+
+  #pedro {
+    width: 110px;
+  }
+
+  #pedroBubble {
+    width: 140px;
+
+    font-size: 0.7rem;
+
+    bottom: 100px;
+    right: 10px;
+  }
+
+}
