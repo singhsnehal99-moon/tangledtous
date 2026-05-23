@@ -195,7 +195,7 @@ if (whyBtn) {
     messageBox.innerHTML =
       randomWhyMessage;
   });
-
+}
   
   const pedro =
   document.getElementById("pedro");
@@ -222,4 +222,5 @@ pedro.onclick = function () {
       bubble.style.opacity = "0";
     }, 4000);
   }
-}};
+};
+}
