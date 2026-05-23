@@ -9,7 +9,7 @@ const sweetMessages = [
   "Sleep on it. The lanterns will still be waiting tomorrow ✨",
   "Rapunzel waited 18 years. I can survive one more day 💛",
   "Some love stories are worth thinking carefully about.",
-  "Even Pascal thinks we’d be cute together.",
+  "Even (Pedro) Pascal thinks we’d be cute together.",
   "No pressure. Just a tiny devastating amount of yearning.",
   "Maybe tomorrow your heart will feel a little braver ✨",
   "You don’t have to answer quickly for it to mean something.",
