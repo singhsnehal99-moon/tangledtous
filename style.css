@@ -126,9 +126,9 @@ button {
 }
 #pedro {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 140px;
+  bottom: 50px;
+  right: 50px;
+  width: 280px;
   cursor: pointer;
   transition: 0.3s ease;
   z-index: 999;
