@@ -78,7 +78,7 @@ noBtn.addEventListener("click", () => {
   lockNoButton();
 });
 
-yesBtn.addEventListener("click", async () => {
+yesBtn.addEventListener("click", () => {
 
   localStorage.setItem("official", "true");
   localStorage.setItem("officialDate", new Date());
@@ -89,44 +89,28 @@ yesBtn.addEventListener("click", async () => {
     "YOU SAID YES 😭✨";
 
   officialBox.innerHTML =
-    "Officially girlfriends 💛";
+    "Officially girlfriends 💛✨";
 
   yesBtn.style.display = "none";
   noBtn.style.display = "none";
 
-  await emailjs.send(
-    "service_tangled",
-    "template_v2w42ff",
+  emailjs.send(
+    "YOUR_SERVICE_ID",
+    "YOUR_TEMPLATE_ID",
     {
-      message:
-        "SHE SAID YES 💛✨",
+      message: "SHE SAID YES 💛✨"
     }
-  );
-});
+  )
+  .then(function(response) {
 
-window.onload = () => {
+    console.log("EMAIL SENT!", response.status, response.text);
 
-  const official =
-    localStorage.getItem("official");
+  })
+  .catch(function(error) {
 
-  if (official === "true") {
+    console.log("FAILED...", error);
 
-    yesBtn.style.display = "none";
-    noBtn.style.display = "none";
-
-    officialBox.innerHTML =
-      "Officially girlfriends 💛✨";
-
-    const startDate =
-  new Date(localStorage.getItem("officialDate"));
-
-const days =
-  Math.floor(
-    (Date.now() - startDate) /
-    (1000 * 60 * 60 * 24)
-  );
-
-officialBox.innerHTML =
-  `Day ${days + 1} of choosing each other.`;
+    alert("Tiny lantern malfunction 🥲 Check console.");
+  });
   }
 };
