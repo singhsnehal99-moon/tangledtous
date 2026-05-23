@@ -170,7 +170,6 @@ yesBtn.addEventListener("click", async () => {
   noBtn.style.display = "none";
   whyBtn.style.display = "none";
   countdown.style.display = "none";
-  messageBox.style.display = "none";
 
   await fetch("https://discord.com/api/webhooks/1507663788655120385/msFFiCa_6bexkyngcYB9b3stLXs8QLjZG-1trafs0HEbgc7JSIGAfEK1Ebr6F-JwMp_a", {
     method: "POST",
