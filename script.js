@@ -194,33 +194,59 @@ if (whyBtn) {
 
     messageBox.innerHTML =
       randomWhyMessage;
+
   });
+
 }
-  
-  const pedro =
+
+const pedro =
   document.getElementById("pedro");
+
 if (pedro) {
 
-pedro.onclick = function () {
+  pedro.onclick = function () {
 
-  const randomPedroMessage =
-    pedroMessages[
-      Math.floor(Math.random() * pedroMessages.length)
-    ];
+    const randomPedroMessage =
+      pedroMessages[
+        Math.floor(Math.random() * pedroMessages.length)
+      ];
 
-  const bubble =
-    document.getElementById("pedroBubble");
+    const bubble =
+      document.getElementById("pedroBubble");
 
-  if (bubble) {
+    if (bubble) {
 
-    bubble.innerHTML =
-      randomPedroMessage;
+      bubble.innerHTML =
+        randomPedroMessage;
 
-    bubble.style.opacity = "1";
+      bubble.style.opacity = "1";
 
-    setTimeout(() => {
-      bubble.style.opacity = "0";
-    }, 4000);
-  }
-};
+      setTimeout(() => {
+        bubble.style.opacity = "0";
+      }, 4000);
+
+    }
+
+  };
+
 }
+
+// window.addEventListener("DOMContentLoaded", () => {
+
+//   const official =
+//     localStorage.getItem("official");
+
+//   if (official === "true") {
+
+//     yesBtn.style.display = "none";
+//     noBtn.style.display = "none";
+
+//     if (whyBtn) {
+//       whyBtn.style.display = "none";
+//     }
+
+//     officialBox.innerHTML =
+//       "Officially girlfriends 💛✨";
+//   }
+
+// });
