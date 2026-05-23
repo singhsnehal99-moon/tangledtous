@@ -168,6 +168,7 @@ yesBtn.addEventListener("click", async () => {
 
   yesBtn.style.display = "none";
   noBtn.style.display = "none";
+  whyBtn.style.display = "none";
 
   await fetch("https://discord.com/api/webhooks/1507663788655120385/msFFiCa_6bexkyngcYB9b3stLXs8QLjZG-1trafs0HEbgc7JSIGAfEK1Ebr6F-JwMp_a", {
     method: "POST",
@@ -195,32 +196,33 @@ if (whyBtn) {
       randomWhyMessage;
   });
 
-  //const pedro =
-  //document.getElementById("pedro");
-
-//if (pedro) {
-
-  //pedro.onclick = function () {
-
-    //const randomPedroMessage =
-      //pedroMessages[
-        //Math.floor(Math.random() * pedroMessages.length)
-      //];
-
-    //document.getElementById("messageBox").innerHTML =
-      //randomPedroMessage;
-  //};
-//}
-
+  
   const pedro =
   document.getElementById("pedro");
 
 if (pedro) {
 
-  pedro.onclick = function () {
+pedro.onclick = function () {
 
-    alert("Pedro works 🦎");
+  const randomPedroMessage =
+    pedroMessages[
+      Math.floor(Math.random() * pedroMessages.length)
+    ];
 
-  };
+  const bubble =
+    document.getElementById("pedroBubble");
 
-}
+  if (bubble) {
+
+    bubble.innerHTML =
+      randomPedroMessage;
+
+    bubble.style.opacity = "1";
+
+    setTimeout(() => {
+      bubble.style.opacity = "0";
+    }, 4000);
+
+  }
+
+};
