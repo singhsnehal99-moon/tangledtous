@@ -1,5 +1,3 @@
-emailjs.init("SENrWgglAgY2wfE8P");
-
 const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
 const messageBox = document.getElementById("messageBox");
@@ -78,7 +76,7 @@ noBtn.addEventListener("click", () => {
   lockNoButton();
 });
 
-yesBtn.addEventListener("click", () => {
+yesBtn.addEventListener("click", async () => {
 
   localStorage.setItem("official", "true");
   localStorage.setItem("officialDate", new Date());
@@ -94,22 +92,22 @@ yesBtn.addEventListener("click", () => {
   yesBtn.style.display = "none";
   noBtn.style.display = "none";
 
-  emailjs.send(
-    "YOUR_SERVICE_ID",
-    "YOUR_TEMPLATE_ID",
-    {
+  fetch("https://formsubmit.co/ajax/singh.snehal99@gmail.com", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    body: JSON.stringify({
       message: "SHE SAID YES 💛✨"
-    }
-  )
-  .then(function(response) {
-
-    console.log("EMAIL SENT!", response.status, response.text);
-
+    })
   })
-  .catch(function(error) {
-
-    console.log("FAILED...", error);
-
-    alert("Tiny lantern malfunction 🥲 Check console.");
+  .then(response => response.json())
+  .then(data => {
+    console.log("EMAIL SENT", data);
+  })
+  .catch(error => {
+    console.log("ERROR", error);
   });
+
 });
