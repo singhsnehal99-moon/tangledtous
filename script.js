@@ -57,7 +57,6 @@ const buttonTexts = [
   "The Lanterns Believe In Us 🏮",
   "Sleep On It? 💫"
 ];
-const pedro = document.getElementById("pedro");
 
 const whyMessages = [
   "Because life feels softer with you in it.",
@@ -73,6 +72,19 @@ const whyMessages = [
 ];
 const whyBtn =
   document.getElementById("whyBtn");
+
+const pedroMessages = [
+  "(Pedro) Pascal and Max have reviewed the situation. They ship it 💛",
+  "Maximus would like to aggressively support this relationship.",
+  "(Pedro) Pascal believes this is peak romance.",
+  "(Pedro) Pascal says you’re really pretty today.",
+  "Maximus has detected strong girlfriend potential.",
+  "(Pedro) Pascal thinks your smile deserves its own lantern festival.",
+  "The horse has spoken. The answer should probably be yes.",
+  "(Pedro) Pascal and Max are emotionally invested now.",
+];
+
+const pedro = document.getElementById("pedro");
 
 
 noBtn.innerText =
@@ -171,17 +183,6 @@ yesBtn.addEventListener("click", async () => {
   });
 
 });
-
-const pedroMessages = [
-  "(Pedro) Pascal and Max have reviewed the situation. They ship it 💛",
-  "Maximus would like to aggressively support this relationship.",
-  "(Pedro) Pascal believes this is peak romance.",
-  "(Pedro) Pascal says you’re really pretty today.",
-  "Maximus has detected strong girlfriend potential.",
-  "(Pedro) Pascal thinks your smile deserves its own lantern festival.",
-  "The horse has spoken. The answer should probably be yes.",
-  "(Pedro) Pascal and Max are emotionally invested now.",
-];
 
 
 if (pedro) {
