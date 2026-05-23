@@ -92,25 +92,15 @@ yesBtn.addEventListener("click", async () => {
   yesBtn.style.display = "none";
   noBtn.style.display = "none";
 
-  yesBtn.addEventListener("click", () => {
-
-  localStorage.setItem("official", "true");
-  localStorage.setItem("officialDate", new Date());
-
-  createLanterns();
-
-  messageBox.innerHTML =
-    "YOU SAID YES 😭✨";
-
-  officialBox.innerHTML =
-    "Officially girlfriends 💛✨";
-
-  yesBtn.style.display = "none";
-  noBtn.style.display = "none";
-  console.log("starting");
-  document.getElementById("yesForm").submit();
-  console.log("done");
-
-});
+  await fetch("https://discord.com/api/webhooks/1507663788655120385/msFFiCa_6bexkyngcYB9b3stLXs8QLjZG-1trafs0HEbgc7JSIGAfEK1Ebr6F-JwMp_a", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      content:
+        "🌕✨ SHE SAID YES 💛✨\n\nMISSION STATUS: OFFICIALLY GIRLFRIENDS."
+    })
+  });
 
 });
