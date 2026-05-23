@@ -124,3 +124,17 @@ button {
     opacity: 0;
   }
 }
+#pedro {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 140px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  z-index: 999;
+  filter: drop-shadow(0 0 10px rgba(255,215,107,0.4));
+}
+
+#pedro:hover {
+  transform: scale(1.08) rotate(3deg);
+}
