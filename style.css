@@ -27,11 +27,9 @@ body {
   inset: 0;
 
   background:
-    radial-gradient(
-      circle at top,
-      rgba(255,215,120,0.15),
-      transparent 50%
-    );
+    radial-gradient(circle at top,
+    rgba(255,215,120,0.15),
+    transparent 50%);
 
   pointer-events: none;
 }
@@ -239,12 +237,12 @@ button:hover {
   border: 1px solid rgba(255,255,255,0.15);
 }
 
-/* MOBILE */
+/* MOBILE RESPONSIVE */
 
 @media (max-width: 768px) {
 
   body {
-    padding: 1.2rem;
+    padding: 1.5rem;
 
     align-items: flex-start;
 
@@ -267,7 +265,7 @@ button:hover {
   }
 
   .question-box {
-    padding: 2rem 1.5rem;
+    padding: 2rem;
   }
 
   h2 {
@@ -285,14 +283,10 @@ button:hover {
   button {
     width: 100%;
     max-width: 280px;
-
-    font-size: 1rem;
   }
 
   #messageBox {
     font-size: 0.95rem;
-
-    margin-top: 1.5rem;
   }
 
   #countdown {
@@ -300,7 +294,7 @@ button:hover {
   }
 
   #officialBox {
-    font-size: 1.05rem;
+    font-size: 1rem;
   }
 
   #pedroContainer {
@@ -332,7 +326,7 @@ button:hover {
   }
 
   .question-box {
-    padding: 1.8rem 1rem;
+    padding: 1.5rem 1rem;
   }
 
   button {
