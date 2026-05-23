@@ -199,7 +199,6 @@ if (whyBtn) {
   
   const pedro =
   document.getElementById("pedro");
-
 if (pedro) {
 
 pedro.onclick = function () {
@@ -222,8 +221,5 @@ pedro.onclick = function () {
     setTimeout(() => {
       bubble.style.opacity = "0";
     }, 4000);
-
   }
-
-};
-}
+}};
