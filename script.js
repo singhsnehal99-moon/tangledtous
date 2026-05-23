@@ -107,9 +107,9 @@ yesBtn.addEventListener("click", async () => {
 
   yesBtn.style.display = "none";
   noBtn.style.display = "none";
-
+  console.log("starting");
   document.getElementById("yesForm").submit();
-    console.log("done");
+  console.log("done");
 
 });
 
