@@ -126,19 +126,45 @@ button {
 }
 
 
-#pedro {
+#pedroContainer {
   position: fixed;
   bottom: 10px;
   right: 10px;
+  z-index: 999999;
+}
+
+#pedro {
   width: 240px;
   cursor: pointer;
-  z-index: 999999;
   transition: transform 0.3s ease;
 }
 
 #pedro:hover {
-  transform: scale(1.08);
-  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+#pedroBubble {
+  position: absolute;
+  bottom: 220px;
+  right: 40px;
+
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px);
+
+  color: white;
+  padding: 1rem;
+
+  border-radius: 20px;
+
+  width: 220px;
+
+  font-size: 0.9rem;
+  line-height: 1.4;
+
+  opacity: 0;
+  transition: 0.3s ease;
+
+  border: 1px solid rgba(255,255,255,0.15);
 }
 
 #whyBtn {
