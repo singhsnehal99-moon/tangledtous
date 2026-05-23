@@ -84,8 +84,6 @@ const pedroMessages = [
   "(Pedro) Pascal and Max are emotionally invested now.",
 ];
 
-const pedro = document.getElementById("pedro");
-
 
 noBtn.innerText =
   buttonTexts[
@@ -185,21 +183,27 @@ yesBtn.addEventListener("click", async () => {
 });
 
 
-if (pedro) {
+window.addEventListener("load", () => {
 
-  pedro.addEventListener("click", () => {
+  const pedro =
+    document.getElementById("pedro");
 
-    const randomPedroMessage =
-      pedroMessages[
-        Math.floor(Math.random() * pedroMessages.length)
-      ];
+  if (pedro) {
 
-    messageBox.innerHTML =
-      randomPedroMessage;
-  });
+    pedro.addEventListener("click", () => {
 
-}
+      const randomPedroMessage =
+        pedroMessages[
+          Math.floor(Math.random() * pedroMessages.length)
+        ];
 
+      messageBox.innerHTML =
+        randomPedroMessage;
+    });
+
+  }
+
+});
 if (whyBtn) {
 
   whyBtn.addEventListener("click", () => {
