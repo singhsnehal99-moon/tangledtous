@@ -138,3 +138,7 @@ button {
 #pedro:hover {
   transform: scale(1.08) rotate(3deg);
 }
+#whyBtn {
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
